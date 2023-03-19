@@ -31,11 +31,6 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact" onClick={handleMobileMenuClick}>
-                                Contact
-                            </NavLink>
-                        </li>
-                        <li>
                             <NavLink to="/booking" onClick={handleMobileMenuClick}>
                                 Bookings
                             </NavLink>

@@ -1,0 +1,47 @@
+.carousel img {
+    max-height: 50vh;
+    object-fit: contain;
+    margin: 0 auto;
+    }
+    
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+    .carousel-control-prev-icon {
+    transform: translateX(-200%);
+    }
+    
+    .carousel-control-next-icon {
+    transform: translateX(200%);
+    }
+    
+    .carousel-caption {
+    position: static;
+    padding: 10px;
+    color: #fff;
+    bottom: 0;
+    }
+    
+
+    .icon {
+        color: black;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .prev-icon {
+        left: 10px;
+      }
+      
+      .next-icon {
+        right: 10px;
+      }
+      
