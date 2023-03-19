@@ -26,7 +26,6 @@ const HomeScreen = () => {
     }, []);
     return (
         <div>
-            <h2>There are {appointment.length} appointments available</h2>
             <div className='container'>
                 <div className='row justify-content-center mt-5'>
 

@@ -1,8 +1,37 @@
 .about-image {
     max-width: 25%;
     height: auto;
+    margin-right: 90px;
+    margin-top: 40px;
+
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+.about-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+@media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+    }
+  
+    .about-image {
+      max-width: 50%;
+    }
+  
+    .about-text {
+      max-width: 50%;
+      padding-left: 20px;
+    }
+  }
+  
 @media screen and (max-width: 768px) {
     .about-image {
         max-width: 100%;

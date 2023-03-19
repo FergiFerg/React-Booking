@@ -32,7 +32,7 @@ function Navbar() {
                         </li>
                         <li>
                             <NavLink to="/booking" onClick={handleMobileMenuClick}>
-                                Bookings
+                                Flash
                             </NavLink>
                         </li>
                         <li>

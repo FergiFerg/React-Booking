@@ -1,47 +1,52 @@
-.carousel img {
-    max-height: 50vh;
-    object-fit: contain;
-    margin: 0 auto;
-    }
-    
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: black;
+.navbar {
+  position: relative; /* ensure the z-index property works */
+  z-index: 1; /* add this line to set the navbar's z-index */
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
-    .carousel-control-prev-icon {
-    transform: translateX(-200%);
-    }
-    
-    .carousel-control-next-icon {
-    transform: translateX(200%);
-    }
-    
-    .carousel-caption {
-    position: static;
-    padding: 10px;
-    color: #fff;
-    bottom: 0;
-    }
-    
+.image-wrapper {
+  position: relative;
+}
 
-    .icon {
-        color: black;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      
-      .prev-icon {
-        left: 10px;
-      }
-      
-      .next-icon {
-        right: 10px;
-      }
-      
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* .overlay:hover {
+  opacity: 1;
+} */
+
+.description {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    z-index: -1; /* add this line to set the carousel caption's z-index */
+  }
+}
